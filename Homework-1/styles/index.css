@@ -1,0 +1,99 @@
+.body {
+    margin: 0 auto;
+    padding-top: 30px;
+    max-width: 900px;
+}
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.main-work-experience-info {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.main-education-and-training-info {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.main-volunteering-info {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+.header-div-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-div-avatar-img {
+
+    width: 100%;
+    min-width: 150px;
+}
+.main-work-experience-date {
+    text-align: center;
+}
+.header-div-contact-info-list {
+    list-style-type: none;
+}
+.header-div-contact-info-h1 {
+    padding-left: 40px;
+    color: #5e3771;
+}
+.header-div-contact-info-list span {
+    font-weight: 600;
+}
+.header-div-contact-info-list-link {
+    text-decoration: none;
+    color: #5e3771;
+}
+.header-div-contact-info {
+    position: relative;
+}
+.header-switch-language {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header-switch-language-icon {
+    height: 35px;
+    width: 35px;
+}
+.header-switch-language-icon:hover {
+    transform: scale(1.2);
+}
+.main-about-me-h2,
+.main-work-experience-h2,
+.header-div-avatar,
+.main-education-and-training-h2,
+.main-language-skills-h2,
+.main-language-skills-h2,
+.main-volunteering-h2 {
+    display: inline-block;
+    color: #5e3771;
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: #5e3771;
+}
+.main-work-experience-date,
+.main-education-and-training-date,
+.main-volunteering-date {
+    text-align: center;
+}
+.main-work-experience-description,
+.main-education-and-training-description,
+.main-volunteering-description {
+    text-align: left;
+    padding-left: 10px;
+}
+.main-education-and-training-description span,
+.main-language-skills-info span,
+.main-work-experience-description span,
+.main-language-skills-language span {
+    font-weight: 600;
+}
+
