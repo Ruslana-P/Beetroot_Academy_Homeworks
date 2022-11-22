@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Семантичні елементи</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header-h1">
+       HTML5 Семантичні елементи
+      </h1>
+      <p>
+        Семантичний елемент чітко описує його значення як для браузера, так і для розробника.
+      </p>
+      <p>
+        Приклади <strong>не семантичних</strong> елементів: &lt;div&gt; і &lt;span&gt; - нічого не говорить про його
+        вміст.
+      </p>
+      <p>
+        Приклади <strong>семантичних</strong> елементів:  &lt;form&gt;,  &lt;table&gt; і &lt;article&gt; - чітко
+        визначає його зміст.
+      </p>
+    </header>
+    <main class="main">
+      <article class="main-browser-support" id="browser-support">
+        <h2>
+          Підтримка браузерів
+        </h2>
+        <img class="browser-logo" src="./assets/images/chrome-Logo.png" alt="browser-chrome-logo"/>
+        <img class="browser-logo" src="./assets/images/internet-explorer-logo.png" alt="browser-internet-explorer-logo"/>
+        <img class="browser-logo" src="./assets/images/firefox-logo.png" alt="browser-firefox-logo"/>
+        <img class="browser-logo" src="./assets/images/safari-logo.png" alt="browser-safari-logo"/>
+        <img class="browser-logo" src="./assets/images/opera-logo.png" alt="browser-opera-logo"/>
+        <p>
+          Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+        </p>
+        <p>
+          Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".
+        </p>
+        <p>
+          Прочитайте про це в <a href="https://www.blogger.com/onboarding" target="_blank">підтримці браузера HTML5</a>.
+        </p>
+      </article>
+      <section class="main-new-elements" id="new-elements">
+        <h2>
+          Нові семантичні елементи в HTML5
+        </h2>
+          HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:
+          <ul>
+            <li><a href="#section-element">&lt;section&gt;</a></li>
+            <li><a href="#article-elem">&lt;article&gt;</a></li>
+            <li><a href="#header-elem">&lt;header&gt;</a></li>
+            <li><a href="#footer-elem">&lt;footer&gt;</a></li>
+          </ul>
+      </section>
+      <section class="main-tag-section" id="section-element">
+        <h2>
+          HTML5 &lt;section&gt; елемент
+        </h2>
+        <p>
+          Елемент &lt;section&gt; визначає розділ в документі.
+        </p>
+        <p>
+          Згідно з документацією в3к'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з
+          заголовком".
+        </p>
+        <p>
+          Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної інформації.
+          <img class="code-example" src="./assets/images/example-section.png" alt="code example for tag section"/>
+        </p>
+      </section>
+      <section class="main-tag-article" id="article-elem">
+        <h2>
+          HTML5 &lt;article&gt; елемент
+        </h2>
+        <p>
+          Елемент &lt;article&gt; визначає незалежний, автономний вміст.
+        </p>
+        <p>
+          Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини
+          веб-сайту.
+        </p>
+        <p>
+          Приклади того, де можна використовувати елемент &lt;article&gt;:
+        </p>
+        <ul>
+          <li>повідомлення на форумі</li>
+          <li>блозі</li>
+          <li>газетна стаття</li>
+        </ul>
+          <img class="code-example" src="./assets/images/example-article.png" alt="code example for tag article"/>
+      </section>
+      <section class="main-tag-header" id="header-elem">
+        <h2>
+          HTML5 &lt;header&gt;  елемент
+        </h2>
+        <p>
+          Елемент &lt;header&gt; задає заголовок для документа або розділу.
+        </p>
+        <p>
+          Елемент &lt;header&gt; повинен використовуватися в якості контейнера для вступного змісту.
+        </p>
+        <p>
+          В одному документі може бути кілька елементів &lt;header&gt;.
+        </p>
+        <p>
+          У наступному прикладі визначається заголовок для статті:
+        </p>
+        <img class="code-example" src="./assets/images/example-header.png" alt="code example for tag header"/>
+      </section>
+      <section class="main-tag-footer" id="footer-elem">
+        <h2>
+          HTML5 &lt;footer&gt; елемент
+        </h2>
+        <p>
+          Елемент &lt;footer&gt; вказує нижній колонтитул для документа або розділу.
+        </p>
+        <p>
+          Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови
+          використання, контактні дані і т.д.
+        </p>
+        <p>
+          В одному документі може бути кілька елементів &lt;footer&gt;.
+        </p>
+        <img class="code-example" src="./assets/images/example-footer.png" alt="code example for tag footer"/>
+      </section>
+      <section class="main-additional-task" id="additional-task">
+        <h2>Приклади використання &lt;iframe&gt; тегу</h2>
+        <div class="main-additional-task-iframe">
+          Тут ви можете побачити моє резюме, вставлене на цю сторінку за допомогою &lt;iframe&gt; тегу.
+          <iframe src="https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-2/index.html"
+          width="850" height="450" title="My CV">
+          </iframe>
+        </div>
+        <div class="main-additional-task-video">
+          Тут ви можете побачити відео з YouTube, вставлене на цю сторінку за допомогою &lt;iframe&gt; тег.
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dEBVe8Ij7JU"
+                  title="YouTube video player" allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+          </iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav>
+        Повернутись до:
+        <ul>
+          <li><a href="#browser-support">Підтримка браузерів</a></li>
+          <li><a href="#new-elements">Нові семантичні елементи в HTML5</a></li>
+          <li><a href="#section-element">HTML5  &lt;section&gt; елемент</a></li>
+          <li><a href="#article-elem">HTML5  &lt;article&gt; елемент</a></li>
+          <li><a href="#header-elem">HTML5  &lt;header&gt; елемент</a></li>
+          <li><a href="#footer-elem">HTML5  &lt;footer&gt; елемент</a></li>
+          <li><a href="#additional-task">Приклади використанні &lt;iframe&gt; тегу</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
