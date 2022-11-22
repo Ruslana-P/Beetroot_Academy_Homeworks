@@ -1,0 +1,28 @@
+.body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header,
+.main-browser-support,
+.main-new-elements,
+.main-tag-section,
+.main-tag-article,
+.main-tag-header,
+.main-tag-footer,
+.main-additional-task,
+.main-additional-task-iframe{
+    padding-bottom: 30px;
+}
+.browser-logo {
+    width: 30px;
+    height: 30px;
+}
+.code-example {
+    max-width: 900px;
+}
+a {
+    color: #6451BA;
+}
+a:hover {
+    color: #462DB3;
+}
