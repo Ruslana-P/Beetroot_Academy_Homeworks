@@ -5,3 +5,6 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 ## Homework 4  
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-4/index.html)  
+
+## Homework 5
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-5/index.html)  
