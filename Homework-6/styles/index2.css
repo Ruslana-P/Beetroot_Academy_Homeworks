@@ -1,0 +1,25 @@
+.form {
+    max-width: 800px;
+}
+.form-fieldset {
+    margin-bottom: 30px;
+}
+.form-fieldset legend {
+    font-weight: bold;
+}
+.form-element {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 10px;
+}
+.non-grid {
+    display: block;
+}
+.div-buttons {
+    text-align: center;
+    position: relative;
+}
+input[type='image'] {
+    width: 48px;
+    height: 48px;
+}

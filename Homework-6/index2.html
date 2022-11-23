@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework 5 - Extra (Forms)</title>
+        <link rel="stylesheet" href="styles/index2.css">
+    </head>
+    <body>
+        <h1>Test for determination your predisposition to creativity</h1>
+        <form class="form">
+            <fieldset class="form-fieldset">
+                <legend>Please enter your personal data</legend>
+                <div class="form-element">
+                    <label for="user-name">First and second name</label>
+                    <input type="text" id="user-name" name="user-name"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-age">Age</label>
+                    <input type="number" id="user-age" name="user-age" min="15" max="100"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" name="user-email"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-tel">Phone number</label>
+                    <input type="tel" id="user-tel" name="user-tel"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-birth-date">Your birth date</label>
+                    <input type="date" id="user-birth-date" name="user-birth-date"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-birth-time">Your birth time</label>
+                    <input type="time" id="user-birth-time" name="user-birth-time"/>
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <legend>Now lets talk about your preferences. Please answer for following questions</legend>
+                <div class="form-element">
+                    <label for="user-fav-color">Your favorite color</label>
+                    <input type="color" id="user-fav-color" name="user-fav-color"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-picture">The best picture of you in your opinion</label>
+                    <input type="file" id="user-picture" name="user-picture"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-fav-month">Your favorite month</label>
+                    <input type="month" id="user-fav-month" name="user-fav-month"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-satisf">Your level of satisfaction with your current position in life</label>
+                    <input type="range" id="user-satisf" name="user-satisf" min="0" max="100" step="5"/>
+                </div>
+                <div class="form-element">
+                    <label for="user-fav-book">Choose the book you prefer the most</label>
+                    <select id="user-fav-book" name="user-fav-book">
+                        <option disabled selected>Choose the book</option>
+                        <option value="it ends with us">It Ends with Us by Colleen Hoover</option>
+                        <option value="where the crawdads sing ">Where the Crawdads Sing by Delia Owens</option>
+                        <option value="the seven husbands of evelyn hugo ">The Seven Husbands of Evelyn Hugo by Taylor Jenkins Reid</option>
+                    </select>
+                </div>
+                <div class="form-element non-grid">
+                    <p>Choose the best way to spend vacation</p>
+                    <div>
+                        <input type="radio" id="sea" value="sea" name="user-vacation"/>
+                        <label for="sea">Lazy rest by the sea</label>
+                        <input type="radio" id="mountains" value="mountains" name="user-vacation"/>
+                        <label for="mountains">Active recreation in the mountains</label>
+                        <input type="radio" id="home" value="home" name="user-vacation"/>
+                        <label for="home">Just staying at home, cooking, watching TV</label>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label for="user-soc-media">You account in Instagram</label>
+                    <input type="url" id="user-soc-media" name="user-soc-media"/>
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <legend>It is almost the end. Please enter a few more additional information</legend>
+                <div class="form-element">
+                    <label for="user-psw">Password (you will need it to open file with results)</label>
+                    <input type="password" id="user-psw" name="user-psw"/>
+                </div>
+                <div class="form-element">
+                    <label for="local-time">Current date and time</label>
+                    <input type="datetime-local" id="local-time" name="local-time"/>
+                </div>
+            </fieldset>
+            <div class="div-buttons">
+                <p>If you change your mind, just click button 'reset' and start from beginning</p>
+                <input type="reset">
+                <p>Another way please submit your answers by clicking on image or button 'submit'</p>
+                <input type="image" src="assets/images/index.jpeg" alt="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>

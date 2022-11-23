@@ -1,0 +1,29 @@
+.registration-form {
+    max-width: 450px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+.form-element {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 10px;
+}
+.non-grid {
+    display: block;
+}
+.div-buttons {
+    text-align: center;
+}
+.div-buttons input {
+    margin-right: 40px;
+}
+.radio-div {
+    width: 220px;
+}
+#user-course {
+    width: 220px;
+}
+#user-address {
+    width: 210px;
+}
