@@ -11,8 +11,8 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 ## Homework 6 - Forms
 
-Standard homework
+Standard homework  
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6/index.html)
 
-Extra homework
+Extra homework  
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6/index2.html)
