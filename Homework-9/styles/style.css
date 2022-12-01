@@ -1,0 +1,17 @@
+/* styles fo header */
+.header {
+    height: 80px;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-logo {
+    display: inline-block;
+}
+.header-nav {
+    display: inline-block;
+}
+.header-entry {
+    display: inline-block;
+}

@@ -1,0 +1,86 @@
+*{transition: all .1s ease-in;}
+/* styles for header start */
+.header {
+    height: 82px;
+    background: #4A4F56;
+    text-align: center;
+}
+.header-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FF8984;
+    padding-top: 19px;
+}
+.header-title:after {
+    content: " Let’s go to the mall!";
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+}
+/* styles for header end */
+
+/* style for main start */
+.main {
+    background: #3B3F45;
+    height: 100vh;
+}
+.shopping-list {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    width: 534px;
+    margin: 0 auto;
+}
+.list-item {
+    height: 45px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-left: 12px;
+    padding-top: 12px;
+}
+.list-item:nth-child(odd) {
+    background: #88839E;
+}
+.list-item:nth-child(even) {
+    background: #7A7593;
+}
+.list-item:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+.list-item:active {
+    background-color: #FF8984;
+}
+input + label {
+    padding-left: 12px;
+}
+input:checked + label {
+    text-decoration: line-through;
+}
+span {
+    font-size: 11px;
+    line-height: 13px;
+}
+span:before {
+    content: "(";
+}
+span:after {
+    content: ")";
+}
+button {
+    display: block;
+    margin: 0 auto;
+    width: 534px;
+    height: 45px;
+    background: #4A4F56;
+    color: #FF8984;
+    border: none;
+}
+/* style for main end */
