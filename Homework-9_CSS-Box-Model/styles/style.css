@@ -1,17 +1,125 @@
+.body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
 /* styles fo header */
 .header {
     height: 80px;
+    text-align: center;
+
 }
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
+
 }
 .header-logo {
     display: inline-block;
+    padding-top: 27.93px;
+    float: left;
 }
 .header-nav {
     display: inline-block;
+    clear: left;
+    font-size: 0;
+    width: 352px;
+}
+.header-nav a{
+    display: inline-block;
+    padding-top: 26px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 28px;
+    color: #2F281E;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+.header-nav a:first-child {
+    color: #FF9900;
+}
+.header-nav a:last-child {
+    padding-right: 0;
+}
+.header-nav a:hover {
+    transform: scale(1.1);
+    font-weight: 600;
 }
 .header-entry {
     display: inline-block;
+    text-align: center;
+    float: right;
+}
+.header-entry a{
+    display: inline-block;
+    height: 46px;
+    width: 110px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-sizing: border-box;
+    margin-top: 17px;
+    padding-top: 13px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.header-entry a:first-child {
+    color: #2F281E;}
+.header-entry a:last-child {
+    background: #FF9900;
+    margin-left: 32px;
+    color: #FFFFFF;
+}
+/* styles for header finishes */
+
+/* styles for section hero */
+.hero {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    height: 495px;
+}
+.hero_info {
+    max-width: 41.6%;
+    margin-top: 172px;
+    float: left;
+}
+.hero-info-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    color: #2F281E;
+    padding-bottom: 30px;
+}
+.hero-info-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+.hero-info-link {
+    box-sizing: border-box;
+    display: block;
+    height: 50px;
+    width: 180px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF9900;
+    text-decoration: none;
+    padding-top: 13px;
+    border-radius: 4px;
+}
+.hero-picture {
+    width: 53.6%;
+    height: 495px;
+    float: right;
+}
+.hero-picture img {
+    width: 100%;
 }

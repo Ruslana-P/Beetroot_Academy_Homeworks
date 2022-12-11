@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 9 - CSS Box Model</title>
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="wrapper">
-        <div class="header-logo">
-          <img src="./assets/images/logo.svg" alt="Logo of company Productly" />
-        </div>
-        <nav class="header-nav">
-          <a href="#" class="header-nav-link">Product</a>
-          <a href="#" class="header-nav-link">Customers</a>
-          <a href="#" class="header-nav-link">Pricing</a>
-          <a href="#" class="header-nav-link">Resources</a>
-        </nav>
-        <div class="header-entry">
-          <button class="header-button">Sign in</button>
-          <button class="header-button">Sign up</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homework 9 - CSS Box Model</title>
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="body">
+<header class="header">
+  <div class="wrapper">
+    <div class="header-logo">
+      <img src="assets/images/logo.svg" alt="Logo of company Productly" />
+    </div>
+    <nav class="header-nav">
+      <a href="#" class="header-nav-link">Product</a>
+      <a href="#" class="header-nav-link">Customers</a>
+      <a href="#" class="header-nav-link">Pricing</a>
+      <a href="#" class="header-nav-link">Resources</a>
+    </nav>
+    <div class="header-entry">
+      <a href="#" class="header-button">Sign in</a>
+      <a href="#" class="header-button">Sign up</a>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="hero">
+    <div class="wrapper">
+      <div class="hero_info">
+        <h1 class="hero-info-title">The Design Thinking superpowers</h1>
+        <p class="hero-info-text">
+          Tools, tutorials, design and innovation experts, all in one place!
+          The most intuitive way to imagine your next user experience.
+        </p>
+        <a href="#" class="hero-info-link">Get started</a>
       </div>
-    </header>
-    <main class="main">
-      <section class="hero">
-        <div class="wrapper">
-          <div class="hero_info">
-            <h1>The Design Thinking superpowers</h1>
-            <p>
-              Tools, tutorials, design and innovation experts, all in one place!
-              The most intuitive way to imagine your next user experience.
-            </p>
-            <button>Get started</button>
-          </div>
-          <figure>
-            <img
-              src="./assets/images/image_hero.svg"
-              alt="Draw about dancing people"
-            />
-          </figure>
-        </div>
-      </section>
-    </main>
-  </body>
+      <figure class="hero-picture">
+        <img src="assets/images/image_hero.svg" alt="Draw about dancing people" />
+      </figure>
+    </div>
+  </section>
+</main>
+</body>
 </html>

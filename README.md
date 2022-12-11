@@ -17,18 +17,15 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 Extra homework  
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6_Forms/index2.html)
 
-## Homework 8 - CSS Selectors  
+## Homework 8 - CSS Selectors    
 
-Standard homework 
-Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6_CSS-selectors/index.html)
-
-Extra homework  
-Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6_CSS-selectors/index2.html)
+Standard homework     
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-8_CSS-selectors/index.html)
 
 ## Homework 9 - CSS Box Model
 
-Standard homework
+Standard homework     
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-9_CSS-Box-Model/index.html)
 
 Extra homework  
-Link to page  [here](https://www.figma.com/file/jOwCkDn0vbTi5e7AXa4dCk/Weather)
+Link to page  [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-9_CSS-Box-Model/index2.html)
