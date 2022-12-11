@@ -3,4 +3,4 @@
 ### Task   
 Create HTML page based on your resume   
 
-Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-2/index.html)
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-2_My-CV/index.html)
