@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Delius-Unicase-Regular';
+    src: url('../fonts/DeliusUnicase-Regular.eot');
+    src: local('☺'), url('../fonts/DeliusUnicase-Regular.woff') format('woff'), url('../fonts/DeliusUnicase-Regular.ttf') format('truetype'), url('../fonts/DeliusUnicase-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: local('☺'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+.main {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.architectural-photography-title,
+.still-life-title,
+.fashion-photos-title {
+    font-family: 'Delius-Unicase-Regular';
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.architectural-photography__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.item2 {
+    grid-area: 1 / 2 / span 1 / span 2 ;
+}
+.item3 {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+.item6 {
+    grid-area: -2 / 2 / span 1 / span 2;
+}
+.still-life__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.item2_2 {
+    grid-area: 1 / 2 / span 1 / span 2;
+}
+.item2_3 {
+    grid-area: 2 / 1 / span 2 / span 2;
+}
+.item2_4 {
+    grid-area: 2 / 3 / span 2 / span 1;
+}
+.item2_5 {
+    grid-area: 4 / 1 / span 1 / span 2;
+}
+.fashion-photos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.item3_2 {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+.item3_4{
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+.item3_5 {
+    grid-area: 2 / 3 / span 2 / span 1;
+}
+.item3_6 {
+    grid-area: 3 / 1 / span 2 / span 1;
+}
+.item3_8 {
+    grid-area: 4 / 2 / span 1 / span 2;
+}
+.item3_9 {
+    grid-area: 5 / 1 / span 1 / span 2;
+}
+.architectural-photography-item,
+.still-life-item,
+.fashion-photos-item {
+    position: relative;
+}
+.figcaption {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.figcaption-author {
+    font-family: 'Roboto-Medium';
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    align-self: flex-end;
+}
+.figcaption-date {
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+    justify-self: end;
+}
+.fashion-photos {
+    margin-bottom: 120px;
+}
+figure img {
+    width: 100%;
+}

@@ -33,3 +33,11 @@ Link to page  [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Home
 ## Homework 10 - BEM
 
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-10_BEM/index.html)
+
+## Homework 11 - Flexbox
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-11_Flexbox/index.html)
+
+# Homework 12 - Grid
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-12_Grid/index.html)
