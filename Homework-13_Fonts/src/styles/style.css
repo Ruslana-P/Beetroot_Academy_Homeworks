@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Staatliches-Regular';
+    src: url('../fonts/Staatliches-Regular.eot');
+    src: local('☺'), url('../fonts/Staatliches-Regular.woff') format('woff'), url('../fonts/Staatliches-Regular.ttf') format('truetype'), url('../fonts/Staatliches-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FrancoisOne-Regular';
+    src: url('../fonts/FrancoisOne-Regular.eot');
+    src: local('☺'), url('../fonts/FrancoisOne-Regular.woff') format('woff'), url('../fonts/FrancoisOne-Regular.ttf') format('truetype'), url('../fonts/FrancoisOne-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Farro-Light';
+    src: url('../fonts/Farro-Light.eot');
+    src: local('☺'), url('../fonts/Farro-Light.woff') format('woff'), url('../fonts/Farro-Light.ttf') format('truetype'), url('../fonts/Farro-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('../fonts/PTSans-Regular.eot');
+    src: local('☺'), url('../fonts/PTSans-Regular.woff') format('woff'), url('../fonts/PTSans-Regular.ttf') format('truetype'), url('../fonts/PTSans-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tourney-SemiBold';
+    src: url('../fonts/Tourney-SemiBold.eot');
+    src: local('☺'), url('../fonts/Tourney-SemiBold.woff') format('woff'), url('../fonts/Tourney-SemiBold.ttf') format('truetype'), url('../fonts/Tourney-SemiBold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+/* styling for header */
+.header {
+    height: 80px;
+    position: relative;
+}
+.header__lang {
+    font-family: 'Tourney-SemiBold';
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    padding-top: 29px;
+    box-sizing: border-box;
+    width: 18px;
+    margin-right: 50px;
+    display: inline-block;
+}
+.nav {
+    display: inline-block;
+}
+.nav__item {
+    display: inline-block;
+}
+.nav__link {
+    font-family: 'Staatliches-Regular';
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+}
+.nav__item:first-child .nav__link::after {
+    content: " /";
+}
+.header__logo {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 13px;
+}
+
+.introduction,
+.core-components,
+.react-fundamentals,
+.handling-input {
+    margin-top: 70px;
+}
+.handling-input {
+    margin-bottom: 90px;
+}
+section h2 {
+    font-family: 'FrancoisOne-Regular';
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 40px;
+}
+.sup-text {
+    font-family: 'Farro-Light';
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    vertical-align: top;
+}
+section p {
+    font-family: 'PTSans-Regular';
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+.react-fundamentals p,
+.handling-input p {
+    padding-bottom: 40px;
+}
+.react-fundamentals p:last-child,
+.handling-input p:last-child {
+    padding-bottom: 0px;
+}
+.bold_text {
+    font-weight: bold;
+}
+.italic-text {
+    font-style: italic;
+}
+.highlighted-text {
+    background-color: rgb(218, 218, 218);;
+}
+a {
+    color: #000000;
+}

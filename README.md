@@ -38,6 +38,10 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-11_Flexbox/index.html)
 
-# Homework 12 - Grid
+## Homework 12 - Grid
 
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-12_Grid/index.html)
+
+## Homework 13 - Fonts
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-13_Fonts/index.html)
