@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Conv_Lato-Light';
+    src: url('../fonts/Lato-Light.eot');
+    src: local('☺'), url('../fonts/Lato-Light.woff') format('woff'), url('../fonts/Lato-Light.ttf') format('truetype'), url('../fonts/Lato-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_Lato-Semibold';
+    src: url('../fonts/Lato-Semibold.eot');
+    src: local('☺'), url('../fonts/Lato-Semibold.woff') format('woff'), url('../fonts/Lato-Semibold.ttf') format('truetype'), url('../fonts/Lato-Semibold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Conv_Lato-Bold';
+    src: url('../fonts/Lato-Bold.eot');
+    src: local('☺'), url('../fonts/Lato-Bold.woff') format('woff'), url('../fonts/Lato-Bold.ttf') format('truetype'), url('../fonts/Lato-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* styles for header */
+.header {
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #BDBDBD;
+    text-align: center;
+    font-family: 'Conv_Lato-Semibold';
+    font-weight: 600;
+}
+.header__logo,
+.header__nav,
+.header__button {
+    display: inline-block;
+}
+.header__logo {
+    float: left;
+    padding-top: 10px;
+}
+.nav__list {
+    font-size: 0;
+}
+.header__nav .nav__item {
+    font-size: 20px;
+    line-height: 24px;
+}
+.header__nav .nav__item{
+    margin-top: 28px;
+}
+.nav__item {
+    display: inline-block;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+.nav__item:last-child {
+    padding-right: 0;
+}
+.nav__link {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+.nav__link_active {
+    color: #18B5DC;
+}
+.nav__item_active {
+    position: relative;
+}
+.nav__cursor {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.header__button {
+    float: right;
+    width: 130px;
+    height: 42px;
+    box-sizing: border-box;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: 1px solid #3C3C3C;
+    margin-top: 19px;
+}
+/* styles for header end */
+
+/* styles for main start */
+.top-title {
+    font-family: 'Conv_Lato-Bold';
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin-top: 150px;
+}
+.top-title::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #DDDBDB;
+}
+.top-subtitle {
+    font-family: 'Conv_Lato-Light';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3C3C3C;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.team {
+    font-size: 0;
+    padding-bottom: 150px;
+}
+.team__item {
+    display: inline-block;
+    width: 270px;
+    height: 333px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.team__item:last-child {
+    padding-right: 0;
+}
+.team-member__photo {
+    width: 100%;
+}
+.team-member__photo:hover {
+    transform: scale(1.1);
+}
+.team-member__name {
+    font-family: 'Conv_Lato-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+    margin-top: 20px;
+}
+.team-member__position {
+    font-family: 'Conv_Lato-Light';
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
+.team__item span {
+    display: block;
+}
+.team-member:first-child {
+    position: relative;
+}
+.team-member__cursor {
+    position: absolute;
+    top: 253px;
+    right: 26px;
+}
+/*styles for main finish */
+
+/* styles for footer start */
+.footer__logo {
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+}
+.footer__nav {
+
+    display: block;
+    width: 384px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+}
+.footer__social-media {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+.footer__cursor {
+    position: absolute;
+    left: 83px;
+    top: 9px;
+}
+.footer__nav .nav__item {
+    font-family: 'Conv_Lato-Semibold';
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+}
+.footer__social-media {
+    font-size: 0;
+    padding-bottom: 40px;
+}
+.social-media__item {
+    width: 42px;
+    height: 42px;
+    padding-right: 10px;
+}
+.social-media__item:last-child {
+    padding-right: 0;
+}
+.social-media__item:hover {
+    transform: scale(1.1);
+}
+/* styles for footer end */

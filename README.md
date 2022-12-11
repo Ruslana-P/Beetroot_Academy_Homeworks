@@ -29,3 +29,7 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 Extra homework  
 Link to page  [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-9_CSS-Box-Model/index2.html)
+
+## Homework 10 - BEM
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-10_BEM/index.html)

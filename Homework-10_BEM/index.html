@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 10 - BEM</title>
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <img class="header__logo logo" src="src/images/logo.svg" alt="logo" />
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">services</a>
+                </li>
+                <li class="nav__item nav__item_active">
+                    <a class="nav__link nav__link_active" href="#">About</a>
+                    <img class="nav__cursor cursor" alt="cursor"
+                         src="src/images/cursor.svg"/>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__button">callback</button>
+    </div>
+</header>
+<main class="main">
+    <div class="wrapper">
+        <section class="top">
+            <h1 class="top-title">who we are</h1>
+            <p class="top-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor<br />incididunt ut labore et dolore magna aliqua.
+            </p>
+        </section>
+        <section class="team">
+            <div class="team__item team-member">
+                <img class="team-member__photo" src="src/images/hover-card.jpg"
+                     alt="photo of team member"/>
+                <span class="team-member__name">John Handson</span>
+                <span class="team-member__position">Lead designer</span>
+                <img
+                        class="team-member__cursor cursor"
+                        alt="cursor"
+                        src="src/images/cursor.svg"/>
+            </div>
+            <div class="team__item team-member">
+                <img class="team-member__photo" src="src/images/card_1.jpg"
+                     alt="photo of team member"/>
+                <span class="team-member__name">Alex Cutter</span>
+                <span class="team-member__position">Developer</span>
+            </div><div class="team__item team-member">
+            <img class="team-member__photo" src="src/images/card_2.jpg"
+                 alt="photo of team member"/>
+            <span class="team-member__name">Elena Simpson</span>
+            <span class="team-member__position">Artist</span>
+        </div>
+            <div class="team__item team-member">
+                <img class="team-member__photo" src="src/images/card_3.jpg"
+                     alt="photo of team member"/>
+                <span class="team-member__name">Lily Allen</span>
+                <span class="team-member__position">Graphic Designer</span>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="wrapper">
+        <img src="src/images/logo.svg" class="footer__logo logo" alt="logo" />
+        <nav class="footer__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">services</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">About</a>
+                </li>
+                <li class="nav__item nav__item_active">
+                    <a class="nav__link nav__link_active" href="#">contacts</a>
+                    <img class="footer__cursor cursor" alt="cursor" src="src/images/cursor.svg"/>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__social-media social-media">
+            <img class="social-media__item" src="src/images/twitter.svg" alt="icon"/>
+            <img class="social-media__item" src="src/images/facebook.svg" alt="icon"/>
+            <img class="social-media__item" src="src/images/instagram.svg" alt="icon"/>
+            <img class="social-media__item" src="src/images/linkedin.svg" alt="icon"/>
+            <img class="social-media__item" src="src/images/telegram.svg" alt="icon"/>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
