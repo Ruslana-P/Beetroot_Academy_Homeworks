@@ -50,3 +50,7 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-14_CSS-positioning-and-transformation/index.html) and
 [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-14_CSS-positioning-and-transformation/page2.html)
+
+## Homework 15 - Styling CSS forms    
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-15_Styling-CSS-forms/index.html)

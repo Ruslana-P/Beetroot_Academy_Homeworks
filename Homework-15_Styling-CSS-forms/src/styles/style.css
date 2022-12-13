@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: local('☺'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.eot');
+    src: local('☺'), url('../fonts/Inter-Regular.woff') format('woff'), url('../fonts/Inter-Regular.ttf') format('truetype'), url('../fonts/Inter-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    background-color: #f7f7f7;
+}
+.main {
+    width: 1170px;
+    margin: 55px auto;
+    display: flex;
+    justify-content: space-between;
+}
+form {
+    background-color: #FFFFFF;
+    width: 570px;
+    height: 590px;
+    box-sizing: border-box;
+    padding: 35px 35px 0 35px;
+}
+.form-title {
+    font-family: 'Roboto-Medium';
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+    margin-bottom: 20px;
+}
+.form-update .form-title {
+    letter-spacing: -0.4px;
+}
+.form-update label,
+.form-sign-up label {
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+input {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    height: 38px;
+    box-sizing: border-box;
+    margin-top: 7px;
+}
+.user-identification {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.user-identification input {
+    width: 245px;
+}
+#user-email {
+    width: 500px;
+}
+.add-info{
+    content: "";
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+    margin-top: 7px;
+}
+.inputs-radio {
+    margin: 20px 0;
+}
+.inputs-radio input {
+    position: absolute;
+    opacity: 0;
+}
+input[type="radio"] + span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+}
+input[type="radio"] + span::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: #FFFFFF;
+    z-index: 3;
+    visibility: hidden;
+}
+input[type="radio"]:checked + span {
+    background: #007BFF;
+}
+input[type="radio"]:checked + span::after {
+    visibility: visible;
+}
+
+.inputs-radio label {
+    margin-right: 21px;
+    vertical-align: top;
+}
+.user-address {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+select[id=user-country],
+select[id=user_country] {
+    width: 245px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 38px;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    background-image: url(../images/arrows.svg);
+    background-repeat: no-repeat;
+    background-position: right 1em top 50%, 0 0;
+    background-size: 1.25em auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.submit-button {
+    font-family: 'Roboto-Medium';
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    display: block;
+}
+.form-sign-up .submit-button {
+    width: 500px;
+    height: 38px;
+    margin-bottom: 22px;
+}
+.conf-info {
+    max-width: 396px;
+    margin: 0 auto;
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #969696;
+    padding-bottom: 20px;
+}
+.conf-link {
+    font-family: 'Inter-Regular';
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.closing-info {
+    text-align: center;
+}
+.closing-info p {
+    display: inline-block;
+    padding-right: 20px;
+}
+.closing-info::before {
+    content: '';
+    display: block;
+    width: 500px;
+    height: 1px;
+    background: #E4E4E4;
+    margin-bottom: 20px;
+}
+.closing-info a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: 'Roboto-Medium';
+    letter-spacing: -0.1px;
+    color: #007BFF;
+}
+
+
+/* styling for second form start */
+.user-image {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+.user-image img {
+    margin-right: 20px;
+}
+input[id=user-photo] {
+    position: absolute;
+    opacity: 0;
+}
+label[for=user-photo] {
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+label[for=user-photo]::before {
+    content: '';
+    display: block;
+    background-color: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 7px;
+    width: 138px;
+    height: 30px;
+    background-image: url(../images/camera-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.5em top 50%, 0 0;
+    background-size: 1.25em auto;
+    margin-bottom: 9px;
+}
+.upload-pic {
+    position: relative;
+}
+.icon-delete {
+    position: absolute;
+    top: 7px;
+    left: 147px;
+}
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.user-info label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.user-info input {
+    width: 245px;
+}
+.form-update .submit-button {
+    width: 150px;
+    height: 38px;
+}
+input:focus,
+input:hover {
+    border: 1px solid #007BFF;
+    border-radius: 6px;
+}
