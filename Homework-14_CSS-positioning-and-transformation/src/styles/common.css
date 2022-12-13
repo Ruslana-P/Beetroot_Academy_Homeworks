@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Staatliches-Regular';
+    src: url('../fonts/Staatliches-Regular.eot');
+    src: local('☺'), url('../fonts/Staatliches-Regular.woff') format('woff'), url('../fonts/Staatliches-Regular.ttf') format('truetype'), url('../fonts/Staatliches-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FrancoisOne-Regular';
+    src: url('../fonts/FrancoisOne-Regular.eot');
+    src: local('☺'), url('../fonts/FrancoisOne-Regular.woff') format('woff'), url('../fonts/FrancoisOne-Regular.ttf') format('truetype'), url('../fonts/FrancoisOne-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Farro-Light';
+    src: url('../fonts/Farro-Light.eot');
+    src: local('☺'), url('../fonts/Farro-Light.woff') format('woff'), url('../fonts/Farro-Light.ttf') format('truetype'), url('../fonts/Farro-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('../fonts/PTSans-Regular.eot');
+    src: local('☺'), url('../fonts/PTSans-Regular.woff') format('woff'), url('../fonts/PTSans-Regular.ttf') format('truetype'), url('../fonts/PTSans-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tourney-SemiBold';
+    src: url('../fonts/Tourney-SemiBold.eot');
+    src: local('☺'), url('../fonts/Tourney-SemiBold.woff') format('woff'), url('../fonts/Tourney-SemiBold.ttf') format('truetype'), url('../fonts/Tourney-SemiBold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+.body {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* styling for header */
+.header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 80px;
+    width: 1200px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: minmax(57px, 100px)  minmax(281px, 1fr) 238px;
+}
+.header__lang {
+    font-family: 'Tourney-SemiBold';
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    padding-top: 29px;
+    box-sizing: border-box;
+    width: 18px;
+    margin-right: 50px;
+    display: inline-block;
+}
+.nav {
+    width: 261px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.nav__item {
+    display: inline-block;
+}
+.nav__link {
+    font-family: 'Staatliches-Regular';
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+}
+.nav__item:first-child .nav__link::after {
+    content: " /";
+}
+.header__logo {
+    padding-top: 13px;
+    width: 238px;
+}
