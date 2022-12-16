@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto-Black.eot");
+  src: local("☺"), url("../fonts/Roboto-Black.woff") format("woff"), url("../fonts/Roboto-Black.ttf") format("truetype"), url("../fonts/Roboto-Black.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: local("☺"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("../fonts/Raleway-Medium.eot");
+  src: local("☺"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.eot");
+  src: local("☺"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.main-title {
+  width: 304px;
+  margin: 121px auto 40px auto;
+  font-family: "Raleway-Medium";
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+.main-title span {
+  display: block;
+  font-family: "Roboto-Black";
+  font-size: 60px;
+  line-height: 66px;
+  color: #FFCC00;
+  margin-top: 15px;
+}
+
+.bonfire {
+  width: 450px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  align-items: center;
+}
+.bonfire .bonfire__line {
+  height: 1px;
+  width: 210px;
+  background-color: #FFCC00;
+}
+.bonfire img {
+  margin: 0 5px;
+}
+
+.main {
+  max-width: 1030px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 122px auto;
+}
+
+.photo {
+  box-sizing: border-box;
+  width: 430px;
+  height: 430px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo img {
+  box-sizing: border-box;
+  max-height: 400px;
+  max-width: 400px;
+  border: 1px solid #FFCC00;
+}
+.photo .horizontal-line {
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background-color: #FFCC00;
+}
+.photo .vertical-line {
+  height: 100px;
+  width: 1px;
+  position: absolute;
+  background-color: #FFCC00;
+}
+.photo .line1, .photo .line5 {
+  top: 0;
+  left: 0;
+}
+.photo .line2, .photo .line6 {
+  top: 0;
+  right: 0;
+}
+.photo .line3, .photo .line7 {
+  bottom: 0;
+  left: 0;
+}
+.photo .line4, .photo .line8 {
+  bottom: 0;
+  right: 0;
+}
+
+.big-vertical-line {
+  width: 1px;
+  height: 560px;
+  background-color: #FFCC00;
+}
+
+.info {
+  width: 430px;
+}
+.info .info-title {
+  font-family: "Roboto-Black";
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+}
+.info .info-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: #FFCC00;
+  margin: 30px auto 0 auto;
+}
+.info .info-subtitle {
+  font-family: "Raleway-Regular";
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #666666;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.info .social-media {
+  width: 135px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.info .social-media img {
+  width: 30px;
+  height: 30px;
+}
+.info p {
+  margin: 49px auto 20px auto;
+  max-width: 430px;
+  font-family: "Raleway-Medium";
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+.info .small-hor-lines {
+  margin: 0 auto 25px auto;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.info .small-hor-lines div {
+  height: 4px;
+  background-color: #FFCC00;
+}
+.info .small-hor-lines .line1, .info .small-hor-lines .line3 {
+  width: 10px;
+}
+.info .small-hor-lines .line2 {
+  width: 20px;
+}
+.info a {
+  font-family: "OpenSans-Bold";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #FFCC00;
+  text-decoration: none;
+  width: 118px;
+  height: 24px;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */
