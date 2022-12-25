@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Homework 18 - Responsive Design</title>
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link
+            rel="stylesheet"
+            media="screen and (min-width: 768px)"
+            href="src/styles/tablet.css"
+    />
+    <link
+            rel="stylesheet"
+            media="screen and (min-width: 1440px)"
+            href="src/styles/dekstop.css"
+    />
+</head>
+<body>
+<header class="header">
+    <div class="wrapper header__wrapper">
+        <img
+                class="header__logo logo"
+                src="src/images/logo.svg"
+                alt="manifest logo"
+        />
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link active-link" href="#">home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">about</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">works</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">blog</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">contact</a>
+                </li>
+            </ul>
+            <img
+                    class="nav-close-button"
+                    src="src/images/close-icon.svg"
+                    alt="click here to close navigation menu"
+            />
+        </nav>
+        <div class="header__tools">
+            <img
+                    class="header__search"
+                    src="src/images/search-icon.svg"
+                    alt="search-logo"
+            />
+            <div class="nav-burger">
+                <div class="nav-burger__line"></div>
+                <div class="nav-burger__line"></div>
+                <div class="nav-burger__line"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <img
+            srcset="
+          src/images/first-screen-small.jpg   320w,
+          src/images/first-screen-middle.jpg  768w,
+          src/images/first-screen-big.jpg    1440w
+        "
+            sizes="(max-width: 767px) 320px,
+                (max-width: 1439px) 768px,
+                1440px"
+            src="src/images/first-screen-small.jpg"
+            alt="picture of building"
+            class="hero__image"
+    />
+    <div class="wrapper hero_wrapper">
+        <h1 class="hero__title">
+            <span>Manifest is a newborn theme.</span>
+            <span>Clean, simple and fast.</span>
+        </h1>
+    </div>
+</section>
+<section class="blog">
+    <div class="wrapper blog__wrapper">
+        <h2 class="blog__title" id="blog_title">Blog</h2>
+        <div class="blog__article">
+            <div>
+                <span class="additional-info">Technology, Interface Design</span>
+                <h3 class="subtitle">
+                    Using UX Design to Build a Sustainable Future
+                </h3>
+                <span class="additional-info">6 May, 2020</span>
+                <p class="info">
+                    Transformation has to be driven by everybody, not just by climate
+                    groups, and we have a responsibility to use our influence to drive
+                    this.
+                    <a href="#">
+                        <img src="src/images/arrow.svg" alt="arrow icon" />
+                    </a>
+                </p>
+            </div>
+            <img
+                    srcset="
+              src/images/blog-arrow-small.jpg  300w,
+              src/images/blog-arrow-medium.jpg 340w,
+              src/images/blog-arrow-big.jpg    370w
+            "
+                    sizes="(max-width: 767px) 300px,
+                     (max-width: 1439px) 340px,
+                     1440px"
+                    src="src/images/blog-arrow-small.jpg"
+                    alt="picture of arrow"
+                    class="photo"
+            />
+        </div>
+        <div class="blog__article">
+            <div>
+                <span class="additional-info">Technology, Interface Design</span>
+                <h3 class="subtitle">
+                    Using UX Design to Build a Sustainable Future
+                </h3>
+                <span class="additional-info">6 May, 2020</span>
+                <p class="info">
+                    Transformation has to be driven by everybody, not just by climate
+                    groups, and we have a responsibility to use our influence to drive
+                    this.
+                    <a href="#">
+                        <img src="src/images/arrow.svg" alt="arrow icon" />
+                    </a>
+                </p>
+            </div>
+            <img
+                    srcset="
+              src/images/blog-building-small.jpg  300w,
+              src/images/blog-building-medium.jpg 340w,
+              src/images/blog-building-big.jpg    370w
+            "
+                    sizes="(max-width: 7680px) 300px,
+                (max-width: 1439px) 340px,
+                1440px"
+                    src="src/images/blog-building-small.jpg"
+                    alt="picture od lamp"
+                    class="photo"
+            />
+        </div>
+    </div>
+</section>
+<section class="latest-posts">
+    <div class="wrapper latest-posts__wrapper">
+        <div class="latest-posts__title-section">
+            <h2 class="latest-posts__title">Latest Posts</h2>
+            <span class="additional-info">
+            View All
+            <a href="#"><img src="src/images/arrow.svg" alt="arrow icon" /></a>
+          </span>
+        </div>
+        <div class="latest-posts__article">
+            <img
+                    srcset="
+              src/images/latest-posts-lamp-small.jpg  300w,
+              src/images/latest-posts-lamp-medium.jpg 340w,
+              src/images/latest-posts-lamp-big.jpg    370w
+            "
+                    sizes="(max-width: 767px) 300px,
+                  (max-width: 1439px) 340px,
+                   370px"
+                    src="src/images/latest-posts-lamp-small.jpg"
+                    alt="picture of lamp"
+                    class="photo"
+            />
+            <div>
+                <p class="latest-posts__date date">
+              <span class="additional-info">Interface Design</span
+              ><span class="additional-info">8 June, 2020</span>
+                </p>
+                <h3 class="subtitle">UX traffic light colours</h3>
+                <p class="info">
+                    UI has to make a huge visual difference between warning, an alert
+                    and a success.
+                </p>
+            </div>
+        </div>
+        <div class="latest-posts__article">
+            <img
+                    srcset="
+              src/images/latest-posts-arrow-smal.jpg   300w,
+              src/images/latest-posts-arrow-medium.jpg 340w,
+              src/images/latest-posts-arrow-big.jpg    370w
+            "
+                    sizes="(max-width: 767px) 300px,
+                (max-width: 1439px) 340px,
+                370px"
+                    src="src/images/latest-posts-arrow-smal.jpg"
+                    alt="picture od arrow on the wall"
+                    class="photo"
+            />
+            <div>
+                <p class="latest-posts__date date">
+                    <span class="additional-info">Interface Design</span>
+                    <span class="additional-info">8 June, 2020</span>
+                </p>
+                <h3 class="subtitle">
+                    Using UX Design to Build a Sustainable Future
+                </h3>
+                <p class="info">
+                    UI has to make a huge visual difference between warning, an alert
+                    and a success.
+                </p>
+            </div>
+        </div>
+        <div class="latest-posts__article">
+            <img
+                    srcset="
+              src/images/latest-posts-building-small.jpg  300w,
+              src/images/latest-posts-building-medium.jpg 340w,
+              src/images/latest-posts-building-big.jpg    370w
+            "
+                    sizes="(max-width: 767px) 300px,
+                (max-width: 1439px) 340px,
+                370px"
+                    src="src/images/latest-posts-building-small.jpg"
+                    alt="picture od arrow on the wall"
+                    class="photo"
+                    id="latest-posts-image"
+            />
+            <div>
+                <p class="latest-posts__date date">
+                    <span class="additional-info">Visual Design</span>
+                    <span class="additional-info">8 June, 2020</span>
+                </p>
+                <h3 class="subtitle">Creativity vs. UX</h3>
+                <p class="info">
+                    Is it possible to create a delightful user experience without
+                    following best UX practices?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="most-popular">
+    <div class="wrapper most-popular_wrapper">
+        <div class="most-popular-title-section">
+            <h2 class="most-popular__title">The Most Popular</h2>
+            <span class="additional-info">
+            View All
+            <a href="#"><img src="src/images/arrow.svg" alt="arrow icon" /></a>
+          </span>
+        </div>
+        <div class="most-popular__article">
+            <img
+                    srcset="
+              src/images/most-popular-lamp-small.jpg  300w,
+              src/images/most-popular-lamp-medium.jpg 340w,
+              src/images/most-popular-lamp-big.jpg    570w
+            "
+                    sizes="(max-width: 767px) 300px,
+                (max-width: 1439px) 340px,
+                1440px"
+                    src="src/images/most-popular-lamp-small.jpg"
+                    alt="picture of lamp"
+                    class="photo"
+            />
+            <p class="date">
+                <span class="additional-info">Interface Design</span>
+                <span class="additional-info">8 June, 2020</span>
+            </p>
+            <h3 class="most-popular__subtitle">
+                Mentorship Match — How a simple LinkedIn feature can boost diversity
+            </h3>
+            <p class="info">
+                LinkedIn is on a clear mission to make professionals more successful
+                by connecting the global workforce and as we learned — diversity and
+                success go hand in hand
+            </p>
+        </div>
+        <div class="most-popular__article">
+            <img
+                    srcset="
+              src/images/most-popular-arrow-small.jpg  300w,
+              src/images/most-popular-arrow-medium.jpg 340w,
+              src/images/most-popular-arrow-bug.jpg    570w
+            "
+                    sizes="(max-width: 767x) 300px,
+                (max-width: 1439px) 340px,
+                1440px"
+                    src="src/images/most-popular-arrow-small.jpg"
+                    alt="picture of arrow on the wall"
+                    class="photo"
+            />
+            <p class="date">
+                <span class="additional-info">Interface Design</span>
+                <span class="additional-info">8 June, 2020</span>
+            </p>
+            <h3 class="most-popular__subtitle">Creativity vs. UX</h3>
+            <p class="info">
+                Is it possible to create a delightful user experience without
+                following best UX practices?
+            </p>
+            <p class="info">
+                UI has to make a huge visual difference between warning, an alert
+                and a success.
+            </p>
+        </div>
+        <a class="most-popular__button" href="#">Load More</a>
+    </div>
+</section>
+<section class="extra-info">
+    <div class="wrapper extra-info__wrapper">
+        <div>
+            <h3 class="extra-info__title">
+                <span>Full-time UI/UX</span>
+                <span>designer</span>
+                <span>Head of Design at</span>
+                <span>VeronaLabs.com</span>
+            </h3>
+            <a href="#"><img src="src/images/arrow.svg" alt="arrow icon" /></a>
+        </div>
+        <div>
+            <p class="info">
+                We work with clients around the world from our headquarters in
+                Charleston, South Carolina.
+            </p>
+            <p class="info">
+                We focus on naming, branding, brand narratives, website design and
+                development, and brand experiences.
+            </p>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div>
+            <p class="footer_text">Need a project?</p>
+            <a class="footer__link" href="tel:+4733378901">(239) 555-0108</a>
+            <a class="footer__link" href="mailto:name@rapidtables.com">
+                tanya.hill@example.com
+            </a>
+        </div>
+        <div class="social--media">
+            <a href="#">
+                <img src="src/images/instagram-logo.svg" alt="instagram logo" />
+            </a>
+            <a href="#">
+                <img src="src/images/facebook-logo.svg" alt="facebook logo" />
+            </a>
+            <a href="#">
+                <img src="src/images/twitter-logo.svg" alt="twitter logo" />
+            </a>
+            <a href="#">
+                <img src="src/images/linkedin-logo.svg" alt="linkedin logo" />
+            </a>
+        </div>
+        <p class="copyright-info">
+            <span>&copy; Copyright Manifest Theme.</span>
+            <span>All rights reserved</span>
+        </p>
+    </div>
+</footer>
+<script src="index.js" type="text/javascript" defer></script>
+</body>
+</html>

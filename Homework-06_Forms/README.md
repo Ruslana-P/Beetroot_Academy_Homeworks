@@ -14,11 +14,11 @@ Create a user registration form. The form must contain the following elements:
 - The option to agree to the terms of confidentiality
 - "Register" button  
 
-Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6_Forms/index.html)
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-06_Forms/index.html)
 
 ## Extra homework 
 ### Task 
 Create an html page that will contain a form divided into logical blocks. 
 The form should have all possible elements of different types   
 
-Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-6_Forms/index2.html)
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-06_Forms/index2.html)

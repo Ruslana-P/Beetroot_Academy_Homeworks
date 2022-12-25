@@ -13,4 +13,4 @@ Using different values of the display property and indents, build a page a "Weat
 The link to the mockup is [here](https://www.figma.com/file/jOwCkDn0vbTi5e7AXa4dCk/Weather).
 
 
-Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-9_CSS-Box-Model/index2.html)
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-09_CSS-Box-Model/index2.html)
