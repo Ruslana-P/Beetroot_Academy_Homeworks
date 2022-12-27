@@ -55,6 +55,10 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-15_Styling-CSS-forms/index.html)
 
+## Homework 16 - SVG
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-16_SVG/index.html)
+
 ## Homework 17 - SASS
 
 Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-17_SASS/index.html)

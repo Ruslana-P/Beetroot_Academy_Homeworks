@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('../fonts/Quicksand-Medium.eot');
+    src: local('☺'), url('../fonts/Quicksand-Medium.woff') format('woff'), url('../fonts/Quicksand-Medium.ttf') format('truetype'), url('../fonts/Quicksand-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: local('☺'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NunitoSans-SemiBold';
+    src: url('../fonts/NunitoSans-SemiBold.eot');
+    src: local('☺'), url('../fonts/NunitoSans-SemiBold.woff') format('woff'), url('../fonts/NunitoSans-SemiBold.ttf') format('truetype'), url('../fonts/NunitoSans-SemiBold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+/* styling for header starts */
+.header {
+    height: 80px;
+    border-bottom: 1px solid #EFEEF3;
+    display: flex;
+    align-items: center;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 12.5px;
+}
+.logo-text {
+    display: inline-block;
+    font-family: 'Quicksand-Medium';
+    font-size: 35px;
+    line-height: 35px;
+}
+.header__logo-text {
+    color: #16133D;
+}
+/* styling for header ends */
+/* styling for section service starts */
+.service {
+    padding: 100px 0;
+}
+.service__title {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+    margin-bottom: 15px;
+}
+.service__subtitle {
+    font-family: 'NunitoSans-SemiBold';
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    margin-bottom: 40px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.card {
+    width: 370px;
+    height: 340px;
+    background: #FFFFFF;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding: 40px;
+
+}
+.card:hover {
+    border: 1px solid #3DB370;
+}
+.card__icon {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.card:hover .card__icon {
+    border: 1px solid rgba(61, 179, 112, 0.1);
+}
+.card-1 .card__icon {
+    background-image: url('../images/megaphone-blue.svg');
+}
+.card-2 .card__icon {
+    background-image: url('../images/building-blue.svg');
+}
+.card-3 .card__icon {
+    background-image: url('../images/phone-blue.svg');
+}
+.card-1:hover .card__icon {
+    background-image: url('../images/megaphone-green.svg');
+}
+.card-2:hover .card__icon {
+    background-image: url('../images/building-green.svg');
+}
+.card-3:hover .card__icon {
+    background-image: url('../images/phone-green.svg');
+}
+.card__title {
+    font-family: 'Roboto-Regular';
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+    margin-bottom: 15px;
+}
+.card__text {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    color: #16133D;
+    margin-bottom: 30px;
+}
+.card__link {
+    text-decoration: none;
+    font-family: 'Roboto-Medium';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DB370;
+}
+
+/* styling for section service ends */
+
+/* styling for footer starts */
+.footer {
+    background: #16133D;
+    height: 193px;
+    display: flex;
+    align-items: center;
+}
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 113px;
+}
+.footer__logo-text {
+    color: #FFFFFF;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.container-svg {
+    font-size: 0;
+}
+.icon  {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    fill: #0D0D0D;
+}
+.icon path {
+
+}
+.icon rect {
+    fill: #EFEEF3;
+}
+.footer__link:hover .icon {
+fill: #3DB370;
+}
+/* styling for footer ends */
