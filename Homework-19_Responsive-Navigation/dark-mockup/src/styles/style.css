@@ -118,6 +118,7 @@
     width: 26px;
     height: 26px;
     margin-right: 20px;
+    cursor: pointer;
 }
 .quick-panel .icon:last-child,
 .quick-settings .icon:last-child {
