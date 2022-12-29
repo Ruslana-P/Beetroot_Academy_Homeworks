@@ -65,5 +65,9 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 ## Homework 18 - Responsive design
 
-Link to page (dark-version)  [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-16_SVG/dark-mockup/index.html)     
-Link to page (light version) [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-16_SVG/light-mockup/index.html)
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-18_Responsive-design/index.html)
+
+## Homework 19 - Responsive navigation   
+
+Link to page (dark version)  [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-19_Responsive-Navigation/dark-mockup/index.html)     
+Link to page (light version) [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-19_Responsive-Navigation/light-mockup/index.html)
