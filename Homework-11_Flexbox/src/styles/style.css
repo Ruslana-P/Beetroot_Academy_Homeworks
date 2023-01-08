@@ -44,7 +44,7 @@
 .body {
     font-family: 'Montserrat-SemiBold';
 }
-/* styles fo header */
+/* style fo header */
 .header {
     height: 80px;
     text-align: center;
@@ -111,9 +111,9 @@
     margin-left: 32px;
     color: #FFFFFF;
 }
-/* styles for header finishes */
+/* style for header finishes */
 
-/* styles for section hero */
+/* style for section hero */
 .hero {
     padding-top: 70px;
     padding-bottom: 100px;
@@ -161,9 +161,9 @@
     width: 100%;
 }
 
-/* styles for section hero end */
+/* style for section hero end */
 
-/* styles for section features start */
+/* style for section features start */
 .features {
     height: 510px;
     background-image: url("../images/bg.png");
@@ -226,9 +226,9 @@
     text-decoration: none;
 }
 
-/* styles for section features end */
+/* style for section features end */
 
-/* styles for footer start */
+/* style for footer start */
 .footer {
     padding-bottom: 70px;
 }
@@ -295,4 +295,4 @@
     text-align: center;
     color: #FFFFFF;
 }
-/* styles for footer end */
+/* style for footer end */

@@ -71,3 +71,7 @@ Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homew
 
 Link to page (dark version)  [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-19_Responsive-Navigation/dark-mockup/index.html)     
 Link to page (light version) [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-19_Responsive-Navigation/light-mockup/index.html)
+
+# Homework 20 - Adaptive graphics    
+
+Link to page [here](https://ruslana-p.github.io/Beetroot_Academy_Homeworks/Homework-20_Adaptive-graphics/index.html)     

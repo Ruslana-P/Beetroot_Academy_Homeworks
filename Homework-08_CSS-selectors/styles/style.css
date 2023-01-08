@@ -1,5 +1,5 @@
 *{transition: all .1s ease-in;}
-/* styles for header start */
+/* style for header start */
 .header {
     height: 82px;
     background: #4A4F56;
@@ -20,7 +20,7 @@
     line-height: 19px;
     display: block;
 }
-/* styles for header end */
+/* style for header end */
 
 /* style for main start */
 .main {

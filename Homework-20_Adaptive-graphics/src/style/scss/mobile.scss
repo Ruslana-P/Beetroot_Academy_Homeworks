@@ -1,0 +1,138 @@
+$main-color: #000000;
+$text-color: #565656;
+$section-bottom-margin: 70px;
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  min-width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* styling for header starts */
+.header {
+  height: 60px;
+}
+.header__wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: $main-color;
+}
+/* styling for header ends */
+
+/* styling for main starts */
+section {
+  margin-bottom: $section-bottom-margin;
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.first-screen__title {
+  font-family: "RedHatDisplay-SemiBold";
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: $main-color;
+  margin-bottom: 40px;
+}
+.subtitle {
+  font-family: "RedHatDisplay-SemiBold";
+  font-size: 26px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: $main-color;
+  margin-bottom: 40px;
+}
+.text {
+  font-family: "Lato-Regular";
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: $text-color;
+  p {
+    margin-bottom: 32px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+/* styling for main ends */
+
+/* styling for footer starts */
+.footer {
+  background: #f4f4f4;
+}
+.footer_text {
+  font-family: "RedHatDisplay-Regular";
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.05em;
+  color: $main-color;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.footer__link {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  line-height: 166%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: $main-color;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  &:last-child {
+    padding-top: 15px;
+  }
+}
+.social--media {
+  font-size: 0;
+  margin: 40px auto;
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 23px;
+    &:last-child {
+      margin-right: 0;
+    }
+    svg path {
+      fill: #565656;
+    }
+    svg rect {
+      fill: none;
+    }
+    svg:hover rect {
+      fill: #565656;
+    }
+    svg:hover path {
+      fill: white;
+    }
+  }
+}
+.copyright-info {
+  text-align: center;
+  padding-bottom: 50px;
+  span {
+    display: block;
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: $main-color;
+  }
+}
+/* styling for footer ends */

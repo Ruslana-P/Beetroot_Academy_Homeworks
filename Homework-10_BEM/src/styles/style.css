@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 
-/* styles for header */
+/* style for header */
 .header {
     height: 80px;
     box-sizing: border-box;
@@ -85,9 +85,9 @@
     border: 1px solid #3C3C3C;
     margin-top: 19px;
 }
-/* styles for header end */
+/* style for header end */
 
-/* styles for main start */
+/* style for main start */
 .top-title {
     font-family: 'Conv_Lato-Bold';
     font-size: 34px;
@@ -160,9 +160,9 @@
     top: 253px;
     right: 26px;
 }
-/*styles for main finish */
+/*style for main finish */
 
-/* styles for footer start */
+/* style for footer start */
 .footer__logo {
     display: block;
     width: 170px;
@@ -208,4 +208,4 @@
 .social-media__item:hover {
     transform: scale(1.1);
 }
-/* styles for footer end */
+/* style for footer end */

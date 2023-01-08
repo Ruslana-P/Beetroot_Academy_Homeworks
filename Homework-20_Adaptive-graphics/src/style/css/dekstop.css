@@ -1,0 +1,21 @@
+.wrapper {
+  min-width: 1440px;
+  padding: 0 135px;
+  max-width: 1800px;
+}
+
+section {
+  margin-bottom: 90px;
+}
+
+.first-screen__title {
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 70px;
+}
+
+.project-overview {
+  width: 50%;
+}
+
+/*# sourceMappingURL=dekstop.css.map */
