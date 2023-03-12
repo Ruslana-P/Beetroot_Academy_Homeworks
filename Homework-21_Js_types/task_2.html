@@ -20,18 +20,18 @@
      Як має працювати програма показано на відео task_2.mkv
       */
       const result = document.getElementById("result");
-      const n1 = +prompt('Please enter number1');
+      const n1 = +prompt('Please enter number1').trim();
       //console.log(n1, typeof n1, isFinite(n1))
-      const n2 = +prompt('Please enter number2');
+      const n2 = +prompt('Please enter number2').trim();
      // console.log(n2, typeof n2, isFinite(n2))
       let sum;
       if (n1&&n2&&isFinite(n1)&&isFinite(n2))  {
-        sum = n1 + n2;
+        sum = 'Summa of your numbers ' + (n1 + n2);
       } else {
          sum = 'Please enter the right number';
       }
 
-      result.textContent = 'Summa of your numbers ' + sum;
+      result.textContent =  sum;
     </script>
   </body>
 </html>
