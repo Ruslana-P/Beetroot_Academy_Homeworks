@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 2</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="h3 text-center">Task 2</h2>
+      <div id="result" class="h4"></div>
+    </div>
+    <script>
+      /*
+      =================== Завдання ===============
+     За допомогою функції prompt() вивести користовачу 2 вікна 
+     В кожному попросити ввести число 
+     Отримати ті 2 числа в програмі в константи n1, n2 
+     вирахувати їх суму та вивести її в елемент result 
+
+     Як має працювати програма показано на відео task_2.mkv
+      */
+      const result = document.getElementById("result");
+      const n1 = +prompt('Please enter number1');
+      //console.log(n1, typeof n1, isFinite(n1))
+      const n2 = +prompt('Please enter number2');
+     // console.log(n2, typeof n2, isFinite(n2))
+      let sum;
+      if (n1&&n2&&isFinite(n1)&&isFinite(n2))  {
+        sum = n1 + n2;
+      } else {
+         sum = 'Please enter the right number';
+      }
+
+      result.textContent = 'Summa of your numbers ' + sum;
+    </script>
+  </body>
+</html>

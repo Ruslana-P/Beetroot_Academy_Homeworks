@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 1</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="h3 text-center">Task 1</h2>
+      <div id="result" class="h4"></div>
+    </div>
+    <script>
+      /*
+      =================== Завдання ===============
+      В коментарях вказано який має бути результат
+      За допомогою casting виправити помилки
+
+      Який має бути результат показано на task_1.png
+      */
+      const x = 10;
+      const y = "20";
+      const z = "150px";
+      const b = true;
+      const f = false;
+      const st = "";
+
+      console.log("x + y = 30, Res: ", x + +y); // Має бути  30
+     // console.log("x + y = 30, Res: ", x + Number(y)); // Має бути  30
+      console.log("y + b = 21, Res: ", +y + b); // Має бути  21
+      //console.log("y + b = 21, Res: ", Number(y) + b); // Має бути  21
+      console.log("y + b = 300, Res: ", parseInt(z) * 2); // Має бути  300
+      console.log("st + z = 150, Res: ", Boolean(st) + parseInt(z)); // Має бути  150
+      console.log("f + z = 150, Res: ", f + parseInt(z)); // Має бути  150
+      console.log("y + z = 170, Res: ", +y + parseInt(z)); // Має бути  170
+      console.log("x + b + z = 161, Res: ", x + b + parseInt(z)); // Має бути  161
+      console.log("z - x * y =  -50, Res: ", parseInt(z) - x * +y); // Має бути  -50
+    </script>
+  </body>
+</html>
