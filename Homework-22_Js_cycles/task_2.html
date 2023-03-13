@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Task 2</title>
+    <meta charset="utf-8" />
+</head>
+<!--  prettier-ignore -->
+<body>
+<div class="container">
+    <h1>Sum</h1>
+    <div id="result" class="h2"></div>
+
+</div>
+
+<script>
+    /*
+          В homework заняття 1 ми виконували роботу в якій
+          виводили модальні вікна prompt() для введення 2-х чисел,
+                  підсумовували їх, і виводили їхню суму
+
+          ========== Завдання
+          Реалізувати те саме завдання, але при цьому виводити вікно
+          із запитом prompt для кожного числа доти, доки користувач
+          не введе правильно відповідне число
+
+          Використовувати цикл while та конструкцію break
+          Бажано написати функцію яка буде перевіряти те що вводе користувач
+          і якщо то є число повертати його в програму
+
+          Як має працювати программа показано в відео task_2.mkv
+     */
+    let num1;
+    let num2;
+
+    while(true) {
+        const answer = prompt('Please enter number 1').trim();
+        if (answer && isFinite(answer)) {
+            num1 = +answer;
+            break;
+        }
+    }
+
+    while(true) {
+        const answer = prompt('Please enter number2').trim();
+        if(answer && isFinite(answer)) {
+            num2 = +answer;
+            break;
+        }
+    }
+
+    const res = num1 + num2;
+    const result = document.getElementById('result');
+    result.textContent = res;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logical operators</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div class="container">
+    <h2>Logical operators</h2>
+    <h3 id="result"></h3>
+</div>
+<!-- /.container -->
+
+<script>
+    /* todo 1
+   1. Користувач у магазині набрав товар на певну суму
+       Імітуємо це показуючи prompt у котрий вводимо суму
+       1000, 2000
+    2. В залежності від суми порахувати знижку і вирахувати результуючу суму
+       - якщо сума до 1000 грн. - знижка 0
+       - якщо сума від 1000 до 2000 грн. - знижка 10%
+       - якщо сума понад 2000 грн. - знижка 20%
+     3. Суму виводимо елемент h3 з id="result"
+       */
+    const sum = +prompt('Please enter your summa');
+    let summaWithDisc;
+
+    if (sum  >= 2000 ) {
+        summaWithDisc = sum - sum * 0.2 ;
+    } else if ( sum >= 1000 && sum < 2000) {
+        summaWithDisc = sum - sum * 0.1 ;
+    } else {
+        summaWithDisc = sum;
+    }
+
+    console.log(summaWithDisc)
+    const result = document.getElementById("result");
+    result.innerText = summaWithDisc;
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home work</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div class="container">
+    <h2>for</h2>
+    <div id="result_1" class="col-md-4"></div>
+
+    <h2>while</h2>
+    <div id="result_2" class="col-md-4"></div>
+</div>
+<!--  /container -->
+
+<script>
+    /*
+    ============ Task 1
+    Використовуючи цикл for(), вивести в браузер таблицю,
+            що складається з 2-х колонок і 5 рядків.
+    (task_1_screen.jpg)
+
+    - у першій колонці виводити номер по порядку, починаючи з 1
+    - у другій колонці виводити добуток 2-х чисел
+    (добуток номерів відповідного рядка)
+
+     =================== як виконувати завдання ===================
+    - код таблиці зберігати як текст у змінну, наприклад, по імені res
+    - після закінчення циклу змінну вивести в
+    <div id="result_1"></div>
+    використовуючи
+    document.getElementById('result_1').innerHTML = res;
+    Ця конструкція замінить приклад коду таблиці на той, що буде
+    у змінній res
+    */
+    let res = "<table>";
+    for (let i=1; i<6; i++) {
+        res += `<tr>
+           <td>${i}</td>
+           <td>${i*i}</td>
+         </tr>`
+    }
+    res += '</table>';
+    document.getElementById('result_1').innerHTML = res;
+
+
+
+    /*
+    ============ Task 2
+    Умови - як і Task 1, але при цьому використовувати цикл while()
+    і результат виводити в елемент
+    <div id="result_2"></div>
+     */
+    let j = 1;
+    let res2 = '';
+    while (j < 6) {
+        res2 += `
+        <tr ${j%2===0 ? "style='background:#a6eea6'":''}>
+        <td>${j}</td>
+        <td>${j*j}</td>
+      </tr>`
+        j++;
+    }
+    res2 = `<table>${res2}</table>`;
+
+    document.getElementById("result_2").innerHTML = res2;
+</script>
+</body>
+</html>

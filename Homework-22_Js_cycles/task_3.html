@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Task 3</title>
+    <meta charset="utf-8" />
+</head>
+<!--  prettier-ignore -->
+<body>
+<div class="container">
+    <h1> if-else</h1>
+    <div id="res1" class="h2"></div>
+
+    <h1>ternary operator</h1>
+    <div id="res2" class="h2"></div>
+</div>
+
+<script>
+    /*
+      У змінній now збережено поточне значення часу (годинник),
+      яка є цілим числом від 0 до 23.
+
+      Завдання - вивести одну із фраз залежно від отриманого часу
+
+      00.01 - 12.00  -> Good morning
+      12:01 - 17:00  -> Good afternoon
+      17:01 - 24:00  -> Good evening
+
+      Виконати 2 варіанти розв'язання задачі
+      1. Використовуючи умовну конструкцію if – else if – else
+         фразу виводити в div id = 'res1'
+
+
+      2. Використовуючи тернарний оператор
+         фразу виводити в div id = 'res2'
+     */
+
+    const now = new Date().getHours();
+    const res1 = document.getElementById("res1");
+    const res2 = document.getElementById("res2");
+    let greeting1;
+    let greeting2;
+
+    if (now >= 0 && now <12) {
+        greeting1 = 'Good morning';
+    } else if (now >= 12 && now < 17) {
+        greeting1 = 'Good afternoon';
+    } else {
+        greeting1 = 'Good evening';
+    }
+    res1.innerHTML = greeting1;
+
+    // Task 2
+
+    greeting2 = now >= 0 && now < 12 ? 'Good morning' : now >= 12 && now < 17 ? "Good afternoon" : "Good evening";
+    res2.innerHTML = greeting2;
+</script>
+</body>
+</html>
