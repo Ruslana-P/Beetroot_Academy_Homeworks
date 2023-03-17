@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3 Quiz</title>
+    <meta charset="utf-8" />
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+    />
+</head>
+<body>
+<!-- Завдання приведено в файлі js/quiz.js -->
+
+<div class="container">
+<h1>Quiz</h1>
+
+<div id="result"></div>
+
+<script>
+        /*
+Програма повинна
+1. Вивести для користувача 3 питання з масиву questions
+   (використовувати функцію prompt())
+2. За відповідями користувача підрахувати та зберегти
+   кількість правильних та неправильних відповідей
+   Підказка: Результати зберігати в масивах
+   rightAnswers, wrongAnswers
+3. Вивести результати в div з id="result" так,
+   як показано на слайдах HOME.pptx
+   Підказка: Тобто треба в циклі по черзі обійти масиви
+	rightAnswers, wrongAnswers та сформувати строку з
+    результатами. Цю строку  за допомогою innerHTML
+    вивести в div з id="result"
+ */
+        const questions = [
+            ["2 + 2", 4], // 2 + 2 -> это вопрос, 4 -> правильный ответ
+            ["9 / 3", 3],
+            ["5 * 5", 25],
+        ];
+
+        const result = document.querySelector('#result');
+        const rightAnswers = [];
+        const wrongAnswers = [];
+
+        // get answers and classify them as right or wrong
+        for (let i = 0, len =  questions.length; i < len; i++ ) {
+            let question = questions[i]
+            let answer = prompt(`${question[0]}`);
+            answer === `${question[1]}`? rightAnswers.push(question) : wrongAnswers.push(question);
+        }
+
+        //render results
+        function getResult (array, answ) {
+            let out = `<p>You have ${array.length} ${answ} answers</p>`
+            out += array.map(item => `<p>${item[0]} = ${item[1]}</p>`).join('');
+            return out;
+        }
+        const rAnswers = (rightAnswers.length !== 0) ? getResult(rightAnswers, 'right') : '';
+        const wrAnswers = (wrongAnswers.length !== 0) ? getResult(wrongAnswers, 'wrong') : '';
+
+        result.innerHTML = rAnswers + wrAnswers;
+
+
+        /*
+        if (wrAnswers === 0) {
+            let trueAnswers = rightAnswers.map(item => `<li>${item[0]} = ${item[1]}</li>`).join(' ');
+            out = `You have ${rAnswers} right answers
+            <ol>
+            ${trueAnswers}
+            </ol>`
+        }else if(rAnswers === 0) {
+          let falseAnswers = wrongAnswers.map(item =>  `<li>${item[0]} = ${item[1]}</li>`).join(' ');
+          out = `You have ${wrAnswers} wrong answers
+             <ol>
+             ${falseAnswers}
+             </ol>`
+        } else {
+          let trueAnswers = rightAnswers.map(item => `<li>${item[0]} = ${item[1]}</li>`).join(' ');
+          let falseAnswers = wrongAnswers.map(item =>  `<li>${item[0]} = ${item[1]}</li>`).join(' ');
+          out = `You have ${rAnswers} right answers
+          <ol>
+            ${trueAnswers}
+           </ol>
+          You have ${wrAnswers} wrong answers
+             <ol>
+             ${falseAnswers}
+             </ol>`
+        }
+         */
+
+    </script>
+</div>
+</body>
+</html>
