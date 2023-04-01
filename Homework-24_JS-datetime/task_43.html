@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Work 2</title>
+    <meta charset="utf-8" />
+
+
+    <style>
+      .box {
+        width: 300px;
+        height: 100px;
+        background: lightgreen;
+      }
+      .hide {
+        display: none;
+      }
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Home Work 2</h2>
+      <div class="box hide"></div>
+      <div id="showtime">00:00</div>
+      <button id="start" class="btn btn-primary">START</button>
+    </div>
+
+    <!--  
+ 1.
+ Щоб скрипт можна було використовувати у різних частинах коду,
+ його треба зробити універсальним.
+ Тобто зробити так, щоб можна було змінювати інтервал часу зворотного
+ відліку, а також дію, що виконується.
+
+ 2. Провести перевірку скрипта на правильність
+ задати дію відкриття hidden блок із класом .box
+-->
+
+    <script>
+      const showtime = document.getElementById("showtime");
+      const btn = document.getElementById("start");
+      const box = document.querySelector(".box");
+
+      const norm = (v) => (v < 10 ? "0" + v : v);
+      let delay = 5000;
+      const second = 1000;
+      const minute = 60000;
+      const day = 86400000;
+      const hour = 3600000;
+
+      //функція приймає час в мілісекундах та дію в виглді іншоі фукнціі
+      function clickHandler(time, func) {
+        const days = Math.floor(time / day);
+        const hours = Math.floor((time - (days * day) )/ hour);
+        const minutes = Math.floor((time - (days * day + hours * hour)) / minute)
+        const seconds =  Math.floor((time - (days * day + hours * hour + minutes * minute) )/ second);
+
+        showtime.innerHTML = `${days} days ${norm(hours)}:${norm(minutes)}:${norm(seconds)}`;
+
+
+        let b = setTimeout( () => {
+          clickHandler(time, func )
+        }, 1000)
+        console.log(time);
+        if (time <= 0 ) {
+          clearTimeout(b);
+          func();
+        }
+        time -= 1000;
+
+      }
+      // const d = () => {
+      //   alert("Action");
+      // };
+      // clickHandler(5000, d);
+
+
+      function remain() {
+        box.classList.replace('hide', 'show')
+      }
+      btn.onclick = function () {
+        clickHandler(delay, remain);
+      };
+    </script>
+  </body>
+</html>

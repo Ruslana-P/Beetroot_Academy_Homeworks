@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 2</title>
+    <meta charset="utf-8" />
+
+    <style>
+      .animate-box {
+        position: relative;
+        overflow: hidden;
+      }
+      .line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: red;
+        top: calc(100% - 2px);
+        left: -100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mb-3">Animate line</h2>
+      <div class="form-group col-md-6">
+        <div class="animate-box">
+          <input id="form-element" class="form-control" type="text" />
+          <div id="line" class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ************************* -->
+    <script>
+      /*
+     При події blur лінія просто зникає
+      Створити анімацію переміщення line назад при події blur
+      */
+      const formElement = document.getElementById("form-element");
+      const line = document.getElementById("line");
+      let int;
+      const initialLeft = parseInt(getComputedStyle(line).left);
+
+      formElement.onfocus = handleFocus;
+      formElement.onblur = handleBlur;
+
+      function handleFocus() {
+        int = setInterval(animateLine, 5);
+      }
+      function handleBlur() {
+        int = setInterval(clearAnimation, 5);
+      }
+
+      function animateLine() {
+        let left = parseInt(getComputedStyle(line).left);
+        if (left === 0) {
+          clearInterval(int);
+        }
+        left += 1;
+        line.style.left = `${left}px`;
+      }
+      function clearAnimation() {
+        let left = parseInt(getComputedStyle(line).left);
+        if (left === initialLeft) {
+          clearInterval(int);
+        }
+        left -= 1;
+        line.style.left = `${left}px`;
+      }
+    </script>
+  </body>
+</html>

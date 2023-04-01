@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+ <head>
+    <title>home work 1</title>
+     <meta charset="utf-8">
+     <style>
+         .d1 {
+             width: 200px;
+             height: 200px;
+             background-color: blue;
+             margin: 10px;
+         }
+     </style>
+ </head>
+<body>
+<div class="container">
+<h2>Home work 1</h2>
+<ul id="results"></ul>
+
+<div id="d1" class="d1" style="opacity:1"></div>
+<input type="submit" class="btn btn-primary" id="btn-out" value="FadeOut">
+<input type="submit" class="btn btn-primary" id="btn-up" value="FadeUp">
+</div>
+<!--
+Написати скрипт, який при натисканні на кнопку FadeOut плавно прибирає
+значення opacity у блоку з id="d1" до значення 0
+а при натисканні на кнопку FadeUp додає значення opacity цього блоку
+до значення 1
+ 
+Для вирішення використовувати
+- функцію setInterval з часом виконання (tick) 50 мілісекунд
+  При цьому кожен tick потрібно додавати (прибирати) opacity на 0.05
+   
+- opacity у скрипті потрібно отримувати як
+     елемент.style.opacity
+
+Підказка – на кожну кнопку треба повісити подію, обробник якої
+буде запускати функцію setInterval, у середині якої буде
+запускати функцію видалення (додавання) opacity у елемента
+  (наприклад, назвемо її fade() )
+
+Функцію fade() треба зробити універсальною – тобто їй потрібно
+передавати аргумент який визначає напрям зміни opacity 
+(зменьшення чи збільшення)
+При цьому в цій функції треба аналізувати opacity та напрямок зміни
+При досягненні значення 0 (1) припиняти роботу функції setInterval
+викликом функції clearInterval()   
+ -->
+<script>
+// find buttons , add click to them
+    const buttons = document.querySelectorAll('.btn-primary');
+    buttons.forEach( item => item.onclick = clickHandler);
+    const box = document.querySelector('#d1');
+    let opacity = +box.style.opacity;
+    const btnOut = document.querySelector('#btn-out');
+    const btnUp = document.querySelector('#btn-up');
+
+
+    btnOut.onclick = clickHandler('out');
+    btnUp.onclick = clickHandler('up');
+
+    function clickHandler(d) {
+        return function innerHandler() {
+            d === 'out' ? btnUp.setAttribute('disabled', 'true') :
+                          btnOut.setAttribute('disabled', 'true');
+            let b = setInterval( () => {
+                console.log(opacity);
+              opacity = (d === 'out') ? opacity -0.05 : opacity + 0.05;
+                box.style.opacity = opacity;
+                if (opacity <= 0 || opacity >= 1 ) {
+                    clearInterval(b);
+                    btnUp.hasAttribute('disabled') && btnUp.removeAttribute('disabled');
+                    btnOut.hasAttribute('disabled') && btnOut.removeAttribute('disabled');
+                }
+          }, 50)
+        }
+    }
+</script>
+</body>
+</html>
+
