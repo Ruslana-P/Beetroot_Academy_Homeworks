@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript - index.html</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-3">
+          <form action="fake.html" name="loginform" autocomplete="off">
+            <div class="mb-4">
+              <label for="login" class="label-control">Login</label>
+              <input
+                type="text"
+                class="form-control"
+                id="login"
+                placeholder="login"
+              />
+              <div class="invalid-feedback">Please enter login</div>
+            </div>
+
+            <div class="mb-4">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+              />
+              <div class="invalid-feedback">Please enter email</div>
+            </div>
+
+            <div class="form-group">
+              <input
+                class="btn btn-primary btn-lg"
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- .container-->
+    <script>
+      const form = document.querySelector("form[name ='loginform']");
+      function removeWhiteSpaces(v) {
+        v = v.trim();
+        let a = "";
+        for (let i = 0, len = v.length; i < len; i++) {
+          a += v[i] != " " ? v[i] : "";
+        }
+        return a;
+      }
+
+      function inputHandler(e) {
+        let value = e.target.value;
+        if (value.length >= 5) {
+          e.target.classList.replace("is-invalid", "is-valid");
+        }
+      }
+
+      form.onsubmit = (event) => {
+        let inputs = document.querySelectorAll(".form-control");
+        let flag = true;
+        for (input of inputs) {
+          let value = input.value;
+          value = removeWhiteSpaces(value);
+          if (!value || value.length < 5) {
+            input.classList.add("is-invalid");
+            input.addEventListener("input", inputHandler);
+            flag = false;
+          }
+        }
+        console.log(flag);
+        !flag && event.preventDefault();
+      };
+    </script>
+  </body>
+</html>
