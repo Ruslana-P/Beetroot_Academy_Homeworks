@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lab_1.html</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .notify-box {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+      }
+
+      .notify-box_show {
+        transform: translateX(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-md-3">
+          <form name="myform" autocomplete="off">
+            <input type="text" name="newtext" class="form-control mb-3" />
+            <input
+              type="submit"
+              name="btn"
+              class="btn btn-primary"
+              value="Add link"
+            />
+          </form>
+        </div>
+
+        <ul id="items" class="col-md-5"></ul>
+      </div>
+      <!-- /row-->
+    </div>
+
+    <!--
+1. При натисканні на кнопку додавати до елемента items посилання виду 
+
+<li class="list-group-item d-flex">
+  <a href="...." target="_blank">LINK</a>
+  <button class="btn btn-primary btn-sm">Remove link</button>
+</li>
+
+2. При натисканні на кнопку Remove link видаляти відповідний
+   елемент li (розглянути 2 варіанти - siblings, dataset)
+
+-->
+
+    <script>
+      const items = document.querySelector("#items");
+      document.addEventListener("submit", submitHandler);
+      document.addEventListener("click", clickHandler);
+
+      function submitHandler(e) {
+        e.preventDefault();
+        if (e.target.name != "myform") {
+          return;
+        }
+
+        const newLink = e.target.newtext.value.trim();
+        if (!newLink) {
+          alert("please enter the link");
+          return;
+        }
+        // console.log(newLink);
+        let newLi = createElement(newLink);
+        items.appendChild(newLi);
+        e.target.newtext.value = "";
+      }
+
+      function createId() {
+        return Math.round(Date.now() + Math.random() * 1e8).toString(36);
+      }
+      //   <li class="list-group-item d-flex">
+      //     <a href="...." target="_blank">LINK</a>
+      //     <button class="btn btn-primary btn-sm">Remove link</button>
+      //   </li>
+      function createElement(v) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.setAttribute("href", v);
+        a.setAttribute("target", "_blank");
+        a.textContent = v;
+        const btn = document.createElement("button");
+        btn.className = "btn btn-primary btn-sm btn-delete";
+        btn.textContent = "Remove link";
+
+        const id = createId();
+        li.setAttribute("id", id);
+        btn.dataset.deleteid = id;
+        li.appendChild(a);
+        li.append(btn);
+        return li;
+      }
+      function clickHandler(e) {
+        const target = e.target;
+        if (!target.classList.contains("btn-delete")) {
+          return;
+        }
+        let id = target.dataset.deleteid;
+        const elem = target.closest(`#${id}`);
+        elem.remove();
+      }
+    </script>
+  </body>
+</html>

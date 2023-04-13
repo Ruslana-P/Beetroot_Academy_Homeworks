@@ -1,0 +1,10 @@
+1. При натисканні на кнопку name="addBtn" з тексту, 
+    який введений у поле з name="newtext"
+    - створити елемент <li class="list-group-item">ВВЕДЕНИЙ ТЕКСТ</li>
+      та додати до ul з id="lists"
+    - створити елемент <options value="">ВВЕДЕНИЙ ТЕКСТ</option> та додати
+      в елемент select з name="selectBox"
+
+ 2. При виборі одного або кількох options із елемента
+    select c name="selectBox" вибрані елементи повинні видалятися
+    як їх select так і ul c id="list-item"
